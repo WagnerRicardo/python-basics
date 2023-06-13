@@ -1,2 +1,2 @@
 # python-basics
- exercicios de python
+ exercicios de python do curso em video
