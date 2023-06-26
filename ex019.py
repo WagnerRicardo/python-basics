@@ -6,6 +6,6 @@ alunos.append(input('Digite o nome do 2° aluno: '))
 alunos.append(input('Digite o nome do 3° aluno: '))
 alunos.append(input('Digite o nome do 4° aluno: '))
 
-escolhido = random.randint(0, 3)
+escolhido = random.choice(alunos)
 
-print(f'O aluno escolhido foi {alunos[escolhido]}')
+print(f'O aluno escolhido foi {escolhido}')
