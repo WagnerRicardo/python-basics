@@ -1,3 +1,2 @@
-nome = input('Digite seu nome: ')
-
-print(f'Têm Silva: {nome.upper().find("SILVA") >= 0}')
+nome = str(input('Digite seu nome completo: ')).strip()
+print(f'Têm Silva: {"SILVA" in nome.upper()}')
