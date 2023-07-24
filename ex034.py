@@ -3,4 +3,4 @@ aumento = 0.15
 if salario > 1250:
     aumento = 0.10
 salarioNovo = salario + (salario * aumento)
-print(f'O aumento será de {aumento * 100}%, sendo o novo salário R${salarioNovo:.2f}')
+print(f'\033[32mO aumento será de {aumento * 100}%, sendo o novo salário R${salarioNovo:.2f}')
