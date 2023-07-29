@@ -4,8 +4,12 @@ yearCurrent = datetime.date.today().year
 age = yearCurrent - birth
 
 if age < 18:
-    print(f'Você ainda vai ter que se alistar. \nfaltam {18 - age} anos.')
+    saldo = 18 - age
+    print(f'Você ainda vai ter que se alistar. \nfaltam {saldo} anos.')
+    print(f'Você vai se alistar em {yearCurrent + saldo}')
 elif age == 18:
-    print('Você está no periodo de alistamento.')
+    print('Você deve se alistar.')
 else:
-    print(f'Já passou o periodo de alistamento \nVocê está {age - 18} anos atrasado.')
+    saldo = age - 18
+    print(f'Já passou o periodo de alistamento \nVocê está {saldo} anos atrasado.')
+    print(f'Você deveria ter se alistado em {yearCurrent - saldo}')

@@ -1,13 +1,21 @@
-import random
-print('-=-JOKENPÔ-=-')
+from random import randint
+from time import sleep
+print('-=-=-JOKENPÔ-=-=-')
 cont = 'y'
 while cont == 'y':
     jogador = int(input('Escolha um digitando o número!:\n1 - pedra\n2 - papel\n3 - tesoura\n'))
-    computador = random.randint(0, 2)
+    computador = randint(0, 2)
     #1 pedra 2 papel 3 tesoura
     escolhas = ['PEDRA', 'PAPEL', 'TESOURA']
     #escolha valida pelo jogador?
     if jogador <= 3:
+        print('-' * 20)
+        print('Jo')
+        sleep(1)
+        print('ken')
+        sleep(1)
+        print('pô')
+        print('-' * 20)
         if jogador == 1 and computador == 1:
             print(f'O computador escolheu {escolhas[computador]}, Você perdeu!')
         elif jogador == 2 and computador == 2:
