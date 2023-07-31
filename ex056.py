@@ -8,9 +8,9 @@ mulherVinte = 0
 
 for i in range(0, 4):
     print('=' * 50)
-    nome[i] = input(f'Digite o {i + 1}° nome:')
+    nome[i] = input(f'Digite o {i + 1}° nome:').strip()
     idade[i] = int(input('Digite a idade: '))
-    sexo[i] = input('Digite o sexo (H/M):').upper()
+    sexo[i] = input('Digite o sexo (H/M):').upper().strip()
 
     idadeSoma += idade[i]
     if sexo[i] == 'H':

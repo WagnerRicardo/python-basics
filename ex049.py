@@ -1,6 +1,3 @@
-print(f'{"tabuada":=^15}')
+num = eval(input('Digite um número para ver sua tabuada: '))
 for i in range(1, 11):
-    for k in range(1, 11):
-        string = str(i) + ' x ' + str(k) + ' = ' + str(i * k)
-        print(f'{string:^16}')
-    print('=' * 15)
+    print(f'{num} x {i} = {num * i}')

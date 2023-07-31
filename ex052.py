@@ -1,15 +1,12 @@
 num = int(input('Digite um número inteiro: '))
-prime = False
-divOutro = 0
+divCont = 0
+print(f'O número {num} é divisivel por:')
 
-for i in range(2, num + 1):
-    if i != num and num % i == 0:
-        divOutro = 1
-    if i == num and divOutro == 0:
-        prime = True
-    else:
-        prime = False
-if prime == True:
-    print(f'O número {num}, é primo!')
+for i in range(1, num + 1):
+    if num % i == 0:
+        print(f'\033[32m{i}', end=' ')
+        divCont += 1
+if divCont == 2:
+    print(f'\n\033[mO número {num}, é primo!')
 else:
-    print(f'O número {num}, não é primo.')
+    print(f'\n\033[mO número {num}, não é primo.')
