@@ -1,7 +1,7 @@
 opt = 0
 num1 = eval(input('Digite o primeiro número: '))
 num2 = eval(input('Digite o segundo número: '))
-while opt < 5:
+while 5 != opt:
     opt = int(input('O que deseja fazer?\n[ 1 ] SOMAR\n[ 2 ] MULTIPLICAR\n[ 3 ] MAIOR\n[ 4 '
                     '] NOVOS NÚMEROS\n[ 5 ] SAIR\n'))
     if opt == 1:
@@ -17,4 +17,6 @@ while opt < 5:
     elif opt == 4:
         num1 = eval(input('Digite o primeiro número: '))
         num2 = eval(input('Digite o segundo número: '))
+    else:
+        print('Opção invalida, tente novamente.')
 print('Você encerrou o programa.')
