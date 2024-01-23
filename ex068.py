@@ -6,20 +6,27 @@ print('-='*20)
 print('VAMOS JOGAR PAR OU IMPAR!')
 print('-='*20)
 
-jogador = 0
-computador = 0
+jogador = computador = 0
 tipo = ''
 s = 0
 resultado = ''
 totGanhos = 0
 
-while jogador != 1:
-    jogador = int(eval(input('Digite um número:')))
-    tipo = str(input('Você quer ser par ou impar? (P/I): ')).upper().strip()
-    if tipo != 'P' or tipo != 'I':
+while True:
+    while True:
+        jogador = input('Digite um número:').strip()
+        try:
+            jogador = eval(jogador)
+            break
+        except:
+            print('Digite um número inteiro.')
+            pass
+    while True:
+        tipo = input('Você quer ser par ou impar? (P/I): ').upper().strip()
+        if tipo == 'I' or tipo == 'P':
+            break
         print('Digite um valor valido')
-        tipo = str(input('Você quer ser par ou impar? (P/I): ')).upper().strip()
-    computador = randint(0, 100)
+    computador = randint(0, 10)
     s = jogador + computador
 
     print('-' * 40)

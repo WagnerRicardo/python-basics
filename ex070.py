@@ -2,8 +2,7 @@
 print('-'*32, '\n','LOJA SUPER BARATÃO'.center(30))
 print('-'*32)
 
-totGasto = 0
-prodMil = 0
+totGasto = prodMil = 0
 prodBarato = ''
 prodBaratoVal = 0
 lista = []

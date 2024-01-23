@@ -17,10 +17,8 @@ while True:
         except:
             continue
     #valida sexo
-    sexo = ''
-    while sexo != 'M' or sexo != 'F':
-        if sexo == 'M' or sexo == 'F':
-            break
+    sexo = ' '
+    while sexo not in 'MF':
         sexo = input('Sexo [M/F]: ').upper().strip()
 
     #tratamento
