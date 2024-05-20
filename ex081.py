@@ -21,8 +21,9 @@ while True:
         break
 print(f'foram digitados {len(lista)} números')
 print('Em ordem decrescente os valores são:', end=' ')
+lista.sort()
 for i in range(len(lista), 0, -1):
-    print(sorted(lista)[i-1], end=' ')
+    print(lista[i-1], end=' ')
 if lista.count('5') >= 1:
     print('\nO número 5 está na lista.')
 else:

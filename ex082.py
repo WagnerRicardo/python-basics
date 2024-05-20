@@ -1,8 +1,7 @@
 lista = []
 par = []
 impar = []
-valor = ''
-resp = ''
+valor = resp = ''
 
 while True:
     while True:
