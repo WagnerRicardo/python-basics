@@ -1,9 +1,9 @@
 lista = [[], []]
-valor = p = 0
+valor = 0
 for i in range(0, 7):
     while True:
         try:
-            valor = float(input(f'\nDigite o {i+1}º Valor: '))
+            valor = float(input(f'Digite o {i+1}º Valor: '))
             break
         except ValueError:
             print('Digite somente números')

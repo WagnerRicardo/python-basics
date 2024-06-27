@@ -1,6 +1,5 @@
 lista = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
-par = 0
-col3 = 0
+par = col3 = 0
 for i in range(0, 3):
     for j in range(0, 3):
         lista[i][j] = eval(input(f'Digite um valor para a posição [{i}, {j}]: '))

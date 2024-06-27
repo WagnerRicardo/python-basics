@@ -32,5 +32,5 @@ for i in range(0, jogos):
     templist.clear()
 for i in range (0, jogos):
     print(f'Jogo {i+1}: {sorted(lista[i])}')
-    time.sleep(1)
+    time.sleep(.7)
 print('-='*5, '< Boa sorte! >', '-='*5)

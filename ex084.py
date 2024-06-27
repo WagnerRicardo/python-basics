@@ -26,7 +26,7 @@ for i in range(0, len(lista)):
             maior = lista[i][1]
         if menor > lista[i][1]:
             menor = lista[i][1]
-for i in range(0,len(lista)):
+for i in range(0, len(lista)):
     if lista[i][1] == maior:
         listaMaior.append(lista[i][0])
     if lista[i][1] == menor:
