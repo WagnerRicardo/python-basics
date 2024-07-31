@@ -1,7 +1,7 @@
 from random import randint
 import time
-jogadores = {'JOGADOR1': randint(0, 6), 'JOGADOR2': randint(0, 6),
-             'JOGADOR3': randint(0, 6), 'JOGADOR4': randint(0, 6)}
+jogadores = {'JOGADOR1': randint(1, 6), 'JOGADOR2': randint(1, 6),
+             'JOGADOR3': randint(1, 6), 'JOGADOR4': randint(1, 6)}
 colocacao = {'1ª Lugar': ['', 0], '2ª Lugar': ['', 0], '3ª Lugar': ['', 0],
              '4ª Lugar': ['', 0]}
 sortedlist = sorted(jogadores.values(), reverse=True)

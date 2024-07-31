@@ -9,5 +9,5 @@ print(aproveitamento)
 print('-='*32)
 print(f'O jogador {aproveitamento["Nome"]} jogou {(len(aproveitamento["gols"]))} partidas')
 for i in range(0, len(aproveitamento["gols"])):
-    print(f'    Na partida {i}, fez {aproveitamento["gols"][i]} gols')
+    print(f'    => Na partida {i}, fez {aproveitamento["gols"][i]} gols')
 print(f'Foi um total de {aproveitamento["Total"]} gols.')

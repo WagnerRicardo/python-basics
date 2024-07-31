@@ -12,20 +12,24 @@ while True:
         tempdict['Total'] += gol
     lista.append(tempdict.copy())
     tempdict.clear()
-    resp = input('Deseja continuar?')
+    while True:
+        resp = input('Deseja continuar?')
+        if resp in 'SsNn':
+            break
+        print('Digite somente "S" ou "N"')
     if resp in 'Nn':
         break
 print('-='*32)
-print(f'{"Cod":<4}{"Nome":<13}{"Gols":<13}{"Total":<6}')
+print(f'{"Cod":<4}{"Nome":<13}{"Gols":<16}{"Total":>7}')
 for i in range(0, len(lista)):
-    print(f'{f"{i}":>3}', f'{lista[i]["Nome"]}'.ljust(12), f'{lista[i]["Gols"]}'.ljust(12),
-          f'{lista[i]["Total"]}'.ljust(6))
+    print(f'{f"{i}":>3}', f'{lista[i]["Nome"]}'.ljust(12), f'{lista[i]["Gols"]}'.ljust(16),
+          f' {lista[i]["Total"]}')
 while True:
     jogador = int(input("Mostrar dados de qual jogador (Número negativo para parar)?"))
     if jogador < 0:
         print('Fim.')
         break
-    if jogador > len(lista)-1:
+    if jogador >= len(lista):
         print('Código inexistente.')
     else:
         print(f'-- LEVANTAMENTO DO JOGADOR {lista[jogador]["Nome"]}')
