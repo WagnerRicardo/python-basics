@@ -2,10 +2,6 @@ from time import sleep
 
 
 def escreva(txt, cor='default'):
-    if cor == 'verde':
-        cor = '\033[1;42m'
-    if cor == 'azul':
-        cor = '\033[1;44m'
     stringlen = len(txt) + 4
     print(cor + '~' * stringlen)
     print(txt.center(stringlen))
@@ -18,14 +14,18 @@ def ajuda(comando):
         global fim
         fim = True
         return
-    escreva(f'Acessando manual do comando {comando}', 'azul')
+    escreva(f'Acessando manual do comando {comando}', cores['Azul'])
     sleep(.5)
-    print('\033[1;30;47m')
+    print(cores['Branco'])
     help(comando)
-    print('\033[0;0;0m', end='')
+    print(cores['default'], end='')
+    sleep(.5)
 
 
+cores = {'default':'\033[0;0;0m', 'Verde': '\033[1;42m', 'Azul': '\033[1;44m',
+         'Branco': '\033[1;30;47m', 'Vermelho': '\033[1;0;41m'}
 fim = False
 while not fim:
-    escreva('Sistema de ajuda Pyhelp', 'verde')
+    escreva('Sistema de ajuda Pyhelp', cores['Verde'])
     ajuda(input('Função ou biblioteca >'))
+escreva('Até logo!', cores['Vermelho'])
