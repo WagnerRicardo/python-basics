@@ -26,7 +26,7 @@ def moeda(n, currency='R$'):
     return f'{currency} {inteiro},{decimal}'
 
 
-def resumo(p, a, r):
+def resumo(p, a=10, r=10):
     print('-'*30)
     print(f'{"RESUMO DO VALOR":^30}')
     print('-'*30)
